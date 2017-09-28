@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="http://underscorejs.ru/underscore-min.js"></script>
+
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+      <div class="heading">
+          <p class="heading__name">TODO</p>
+      </div>
+      <div class="todo-area clearfix">
+          <h1 class="todo-area__title title_color">My TODO</h1>
+          <form id="TEST">
+              <input type="text" id="task" class="todo-area__task" placeholder="New Task...">
+              <input type="submit" id="add" class="todo-area__add" value="Add">
+              <input type="checkbox" id="checkbox" class="todo-area__checkbox">
+          </form>
+      </div>
+      <ul id="list" class="list">
+      </ul>
+      <div class="info">
+          <div class="info__text" id="done-count">Done:</div>
+          <div class="info__text" id="not-done-count">Not Done:</div>
+            <ul class="mode">
+              <li class="mode__item"><a id="all" class="mode__link">All</a></li>
+              <li class="mode__item"><a id="done" class="mode__link">Done</a></li>
+              <li class="mode__item"><a id="undone" class="mode__link">Undone</a></li>
+            </ul>
+          <button id="del-all" class="btn btn__del">Delete Checked</button>
+      </div>
+      <ul class="pagination" id="pages">
+
+      </ul>
+  </div>
+  <script src="/javascripts/script.js"></script>
+</body>
+</html>
